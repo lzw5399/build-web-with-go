@@ -25,7 +25,7 @@ func sayHelloName(w http.ResponseWriter, r *http.Request) {
 func login(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("method:", r.Method) //获取请求的方法
 	if r.Method == "GET" {
-		t, err := template.ParseFiles("bili_code/3_http/4_form/login.html")
+		t, err := template.ParseFiles("bili_code/3_http/3_form_input_sample/login.html")
 		if err != nil {
 			fmt.Println("error: ", err)
 			return
